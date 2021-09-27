@@ -1,54 +1,90 @@
 /*style sheet for Fungi Fun Facts*/
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
-body{
-	background:
+body {
+	text-align: center;
+	font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+	background-image: url("../images/light-grey-terrazzo.png");
+	background-attachment: fixed;
+}
+
+.header-area {
+	background-image: url("../images/header-image.jpg");
+	width: 100%;
+	height: 625px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.header-area h1 {
+	position: absolute;
+	left: 17%;
+  	bottom:15px;
+	color: white;
+	font-family: Trirong;
+	font-size: 36px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.content-area {
+	width: 1170px;
+	margin: 0 auto;
+	position: relative;
+	/*background: #ebebeb;*/
+}
+
+.content-area h2 {
+	padding-top: 50px;
+	color: #E46717;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.content-area p {
+	padding-top: 10px;
+	line-height: 25px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 50px 5px;
+	border: 6px solid #263611;
+	border-radius: 20px;
+	padding: 4px;
+}
+
+.footer {
+	width: 100%;
+	height: 120px;
+	padding-top: 30px;
+	text-align: left;
+	background-color: #181818;
+	color: white;
+}
+
+.footer ul {
+	list-style:none;
+	padding-left: 100px;
+}
+
+a:link {
+	color:#ec9051;
+	text-decoration:none;
+}
+
+a:visited {
+	color: #c4c454;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #99c3af;
+	text-decoration:none;
 }

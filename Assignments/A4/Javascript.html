@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Kristie Phan">
+    <meta name="description" content="Assignment 4: Working with Javascript">
+    <title>Assignment 4: Working with Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" -->
+
+    <style>
+      #draggable { width: 150px; height: 150px; padding: 0.5em; }
+    </style>
+
+<!-- bring jquery & jquery UI into our web page from Google's CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+      $( function() {
+        $( "#draggable" ).draggable();
+      } );
+      $( function() {
+        $( ".widget input[type=submit], .widget a, .widget button" ).button();
+        $( "button, input, a" ).click( function( event ) {
+          event.preventDefault();
+        } );
+      } );
+      $( function() {
+        $( "#accordion" ).accordion();
+      } );
+      $( function() {
+        $( "#tabs" ).tabs();
+      } );
+    </script>
+
+  </head>
+
+  <body>
+    <h1>Assignment 4: Working with Javascript</h1>
+      <p>Here are 5 examples of jQuery UI components.</p>
+
+    <h2>Example 1: Datepicker</h2>
+      <p>Date: <input type="text" id="datepicker"></p>
+
+    <h2>Example 2: Draggable</h2>
+        <div id="draggable" class="ui-widget-content">
+      <p>Drag me around! ･:*☆ヽ(*°ヮ° *)ﾉ</p>
+    </div>
+
+    <h2>Example 3: Button</h2>
+        <div class="widget">
+            <button>A button element</button>
+            <input type="submit" value="A submit button">
+            <a href="#">An anchor</a>
+        </div>
+
+
+    <h2>Example 4: Accordio</h2>
+        <div id="accordion">
+      <h3>Random Fact 1</h3>
+        <div>
+          <p>If you type the word "askew" into the Google search box, the entire page will tilt slightly.</p>
+        </div>
+      <h3>Random Fact 2</h3>
+        <div>
+           <p>To leave a party without telling anyone is called in English, a “French Exit”. 
+           In French, it’s called a “partir à l’anglaise”, to leave like the English.</p>
+        </div>
+      <h3>Random Fact 3</h3>
+        <div>
+            <p>Astronaut is a compound word derived from the two Ancient Greek words 
+            “Astro” meaning “star” and “naut” meaning “sailor”. So astronaut literally means “star sailor”.</p>
+        </div>
+      <h3>Random Fact 4</h3>
+        <div>
+            <p>The Greek name for the mosquito is "anopheles," which means “good for nothing.”</p>
+        </div>
+      <h3>Sources</h3>
+        <div>
+           <p>Sources:</p>
+            <ul>
+              <li>https://www.thefactsite.com/1000-interesting-facts/</li>
+              <li>https://www.factretriever.com/fun-facts</li>
+            </ul>
+        </div>
+          </div>
+
+    <h2>Example 5: Tabs</h2>
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">First</a></li>
+            <li><a href="#tabs-2">Second</a></li>
+            <li><a href="#tabs-3">Third</a></li>
+          </ul>
+        <div id="tabs-1">
+          <h3>Toby For Chrome (https://www.gettoby.com/)</h3>
+            <p>"What is Toby? Toby is better than bookmarks, it's a browser extension that helps you organize your tabs on every new page.
+            Available on Chrome, and soon Firefox and Microsoft Edge."</p>
+        </div>
+        <div id="tabs-2">
+          <h3>Coffeelings (https://chrome.google.com/webstore/detail/coffeelings/hcbddpppkcnfjifbcfnhmelpemdoepkk)</h3>
+            <p>"A mini journal tucked into your browser. Your own personal mini journal & mood tracker. 
+            Choose a coffee roast to match your mood, write up journal entries, and interact with a calendar that grows a little bit every day."</p>
+        </div>
+        <div id="tabs-3">
+          <h3>Otto – Pomodoro timer and website blocker (https://ottoapp.me/)</h3>
+            <p>"Be mindful while working - A Pomodoro timer and website blocker to help you stay focused."</p>
+        </div>
+        </div>
+
+  </body>
+</html>

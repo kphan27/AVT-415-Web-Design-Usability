@@ -2,14 +2,8 @@
 	margin: 20px 20px 0 20px;
 	line-height: 1.5em;
 }
-.assignments {
-	width: 65%;
+.assignments .project {
 	float: left;
-}
-.project {
-	width: 65%;
-	float: left;
-	padding-top: 10px;
 }
 
 body {
@@ -21,7 +15,6 @@ p, h1, h2, h3, dd, dl {
 	margin-top: 1px;
 	padding-top: 0px;
 }
-
 dt, dd {
 	padding-left: 35px;
 }
